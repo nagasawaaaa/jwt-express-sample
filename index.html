@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login Example</title>
+</head>
+<body>
+
+  <h4>Login</h4>
+  <div>
+    <div>
+      <input id="loginEmail" placeholder="Login Email">
+    </div>
+    <div>
+      <input id="loginPassword" placeholder="Login Password">
+    </div>
+    <button onclick="login()">Login</button>
+  </div>
+
+  <hr>
+
+  <div>
+    <h5>Token: <span id="showToken"></span></h5>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <hr>
+
+  <div>
+    <h3>Todo List</h3>
+    <button onclick="readData()">Read Data</button>
+    <ul id="dataList"></ul>
+  </div>
+<script src="./myscript.js"></script>
+</body>
+</html>
